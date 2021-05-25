@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:
+    url('https://i.pinimg.com/originals/af/74/f0/af74f0e26a7b9a17afd895e18f74b92f.gif')
+    no-repeat center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    z-index: 999999;
+    }
+.ram {
+  padding:0px 30px 10px;
+  height: 250px;
+  font-size: 26px; 
+  font-weight: bold;
+}
+.ram img {
+  float: left;
+  margin: 10px 10px 0 -25px;
+  height: 180px;
+  width: 180px;
+} 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.card {
+  max-width: 200px;
+  max-height: 200px;
+  column-gap: 40px;
+  display: flex;
+  padding: 0px 30px;
+  margin: auto;
+  float: left;
+  align-items:left ;
+  text-align: left;
+  font-family: arial;
+}
+button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+ i{
+   color: #61ce70;
+ }       
+</style>
+</head>
+<script>
+  function show(shown, hidden) {
+    document.getElementById(shown).style.display='block';
+    document.getElementById(hidden).style.display='none';
+    return false;
+  }
+  </script>
+<body onload="myFunction()">
+  <div id='loading'></div>
+<div id="Page1">
+   <div class="jumbotron text" style="margin-bottom:0">
+    <div class="ram">
+        <a href="#">
+            <img class="logo" src="logo.png" alt="forecastr logo" style="height: auto; padding:80px 40px ; "/>
+        </a>
+        <a>
+      <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Person" style="border-radius: 50%;"/>
+      </a><br>
+      <p style="color: #61ce70;" class="title">Hare Krishna</p>
+      <p style="color: #34312d;" class="title">Student</p>
+          
+          <div>
+              <a href="#"><i class="fa fa-github"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+              <div style="padding: 0px 1240px;">
+                <a type="button" class="btn btn-outline-success" target="_blank" rel="noopener noreferrer" href="http://65.0.70.32:3000/">Upload</a>
+              </div>
+          </div>  
+
+    </div>
+    
+</div>
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="active" href="#"><i class="fa fa-home"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="btn btn-outline" aria-current="page" href="" onclick="return show('Page2','Page1');">Wallet</a>
+          </li>
+          
+          <li class="nav-item">
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a href="#" onclick="return show('Page5','Page1');"><img src="https://img.icons8.com/doodle/48/000000/apple-settings.png"/></a>
+          
+          <a href="#" onclick="return show('Page4','Page1');"><img src="https://img.icons8.com/pastel-glyph/44/000000/online-support.png"/></a>
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Skill</h1>
+    <div class="card">
+      <img src="image\internship.png" alt="" style="width:100%; height: 200px;">
+      <p><button><a style="color: white;" href="Internship.html">Internship</a></button></p>
+    </div>
+    
+    <div class="card">
+      <img src="image\project.png" alt="" style="width:100%; height: 200px;">
+      <p><button><a style="color: white;" href="project.html">Project</a></button></p>
+    </div>
+    
+    <div class="card">
+      <img src="image\hackathon.jpg" alt="" style="width:100%; height: 200px">
+      <p><button><a style="color: white;" href="Hackathon.html">Hackathon</a></button></p>
+    </div>
+    
+    <div class="card">
+      <img src="image\Volinter.jpg" alt="" style="width:100%; height: 200px;">
+      <p><button><a style="color: white;" href="Volinter.html">Volinter</a></button></p>
+    </div>
+    
+    <div class="card">
+      <img src="image\Entrepreneur.jpg" alt="" style="width:100%; height: 200px;">
+      <p><button ><a style="color: white;" href="Entrepreneur.html">Entrepreneur</a></button></p>
+    </div><br><br><br><br><br><br><br><br><br><br><br>
+    <h1></h1>
+    </div>
+</div>
+</div>
+<!-- page 1 end -->
+
+
+    
+<!--######################## page 2 ############################# -->
+
+
+
+<div id="Page2" style="display:none">
+  <div class="jumbotron text" style="margin-bottom:0">
+    <div class="ram">
+        <a href="#">
+            <img class="logo" src="logo.png" alt="forecastr logo" style="height: auto; padding:80px 40px ; "/>
+        </a>
+        <a>
+      <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Person" style="border-radius: 50%;"/>
+      </a><br>
+      <p style="color: #61ce70;" class="title">Hare Krishna</p>
+      <p style="color: #61ce70;" class="title">Student</p>
+          
+          <div style="margin:20px 48px 5px; text-decoration: none; padding: 8px; font-size: 22px; color:#61ce70;">
+              <a href="#"><i class="fa fa-github"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>  
+           <a type="button" class="btn btn-outline-success" target="_blank" rel="noopener noreferrer"  href="http://65.0.70.32:3000/">Upload</a>
+
+    </div>
+</div>
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="active" href="#" onclick="return show('Page1','Page2');"><i class="fa fa-home"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="btn btn-outline" aria-current="page" href="" >Wallet</a>
+          </li>
+          
+          <li class="nav-item">
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a href="#" onclick="return show('Page5','Page2');"><img src="https://img.icons8.com/doodle/48/000000/apple-settings.png"/></a>
+          
+          <a href="#" onclick="return show('Page4','Page2');"><img src="https://img.icons8.com/pastel-glyph/44/000000/online-support.png"/></a>
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+  </div>
+  <div class="container"> 
+  <div class="row">
+      <h2>Wallet</h2>
+      <table>
+        <thead>
+      <tr>
+        <th>Hash</th>
+        <th>Name</th>
+        <th>Link</th>
+        <th>OR Code</th>
+        <th>Verified</th>
+        
+      </tr>
+        </thead>
+        
+        <tr>   
+            <td><%= row.hash %></td>
+            
+            <td><%= row.name %></td>
+            <td>
+              <a style="height: 100%;width: 100%;" href="https://ipfs.infura.io/ipfs/<%= row.hash %>">View</td>
+                <td><img src= 
+                  "https://chart.googleapis.com/chart?cht=qr&chl=https://ipfs.infura.io/ipfs/<%= row.hash %>/&chs=160x160&chld=L|0"
+                      class="qr-code img-thumbnail img-responsive" 
+                          alt="" 
+                              title="HELLO" 
+                              width="100" 
+                              height="100"/> </td>
+       <td><img src="https://img.icons8.com/cute-clipart/64/000000/verified-badge.png"/></td>
+        </tr>
+    </table>
+      </div>
+      </div>
+    </div>
+
+<!--############################# page 4 ########################################## -->
+<div id="Page4" style="display:none;">  
+  <div class="jumbotron text" style="margin-bottom:0">
+   <div class="ram">
+       <a href="#">
+           <img class="logo" src="logo.png" alt="forecastr logo" style="height: auto; padding:80px 40px ; "/>
+       </a>
+       <a>
+     <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Person" style="border-radius: 50%;"/>
+     </a><br>
+     <p style="color: #61ce70;" class="title">Hare Krishna</p>
+     <p style="color: #61ce70;" class="title">Student</p>
+         
+         <div style="margin:20px 48px 5px; text-decoration: none; padding: 8px; font-size: 22px; color:#61ce70;">
+             <a href="#"><i class="fa fa-github"></i></a>
+             <a href="#"><i class="fa fa-twitter"></i></a>  
+             <a href="#"><i class="fa fa-linkedin"></i></a>  
+             <a href="#"><i class="fa fa-facebook"></i></a> 
+         </div>  
+          <a type="button" class="btn btn-outline-success" target="_blank" rel="noopener noreferrer" href="http://65.0.70.32:3000/">Upload</a>
+
+   </div>
+</div>
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid">
+       <a class="active" href="#"onclick="return show('Page1','Page4');"><i class="fa fa-home"></i></a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+           <a class="btn btn-outline" aria-current="page" href="" onclick="return show('Page2','Page4');">Wallet</a>
+         </li>
+         
+         <li class="nav-item">
+         </li>
+       </ul>
+       <form class="d-flex">
+         <a href="#" onclick="return show('Page5','Page4');"><img src="https://img.icons8.com/doodle/48/000000/apple-settings.png"/></a>
+         
+         <a href="#" ><img src="https://img.icons8.com/pastel-glyph/44/000000/online-support.png"/></a>
+         
+       </form>
+     </div>
+   </div>
+ </nav>
+ </div>
+ <div class="container">
+<form>
+  <div class="mb-3">
+    <h2>Support</h2>
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Please Enter Comments here.......</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+
+      <div class="jumbotron text-end" style="margin-bottom:0">
+    <small style=" font-weight: bold;">Made with <span>❤</span> by <span style=" font-weight: bold; href="http://Blockcation.com/" target="_blank">Blockcation.com</span></small>
+      </div>
+     
+    
+</body>
+<script>
+  var preloader = document.getElementById('loading');
+
+  function myFunction(){
+    setTimeout(()=>{
+      preloader.style.display ='none';
+    },2000)
+  }
+</script>
+</html>

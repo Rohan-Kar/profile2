@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>update page</h1>
+
+<form action="update1" method="post">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <label for="username">username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  <label for="hash">hash:</label>
+  <input type="text" id="hash" name="hash"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
